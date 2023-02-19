@@ -11,7 +11,7 @@ public class satu {
             "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)";
     String email = "^((?!\\.)[\\w_.]*[^.])(@\\w+)(\\.\\w+(\\.\\w+)?[^.\\W])";
     String date1 = "(0?[1-9]|[12][0-9]|3[01])[\\/\\-](0?[1-9]|1[012])[\\/\\-]\\d{4}";
-    String date2 = "(Senin|Selasa|Rabu|Rabu|Kamis|Jumat|Sabtu|Miggu),(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec),\\d{2}";
+    String date2 = "(Senin|Selasa|Rabu|Rabu|Kamis|Jumat|Sabtu|Miggu),(Januari|Februari|Maret|April|Mei|Juni|Juli|Agustus|September|Oktober|November|Desember),\\d{2}";
     List<String> patern = new ArrayList<>();
     public void regexValidation(String data){
         this.data = data;
