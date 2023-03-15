@@ -26,9 +26,8 @@ public class Reporting {
     Mailer mailer;
     public static Connection connection = null;
     @GET
-    @Scheduled(cron="0 32 8 15 * ?")
+    @Scheduled(cron="1 1 1 1 * ?")
     public void report() {
-
         Date date = new Date();
         Integer rowNUm = 1;
         String tanggal = LocalDate.now().toString()+"-"+LocalTime.now().getSecond()+LocalTime.now().getMinute()+LocalTime.now().getHour();
