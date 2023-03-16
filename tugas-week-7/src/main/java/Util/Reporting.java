@@ -65,8 +65,8 @@ public class Reporting {
                         "Hello Mr. Dengklek.\n" +
                                 " I hope you are in good health.\n" +
                                 " This is the reporting of your garden results for this month.\n")
-                        .addAttachment("Laporan hasil kebun2023-03-15.xlsx",
-                        new File("..\\reportingTrack\\Laporan"+tanggal+".xlsx"), "text/plain"));
+                        .addAttachment("Laporan hasil kebun"+tanggal+".xlsx",
+                        new File("reportingTrack\\Laporan"+tanggal+".xlsx"), "text/plain"));
                 Log.info("success");
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
