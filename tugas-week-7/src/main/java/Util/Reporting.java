@@ -36,8 +36,9 @@ public class Reporting {
         Row header = sheet.createRow(0);
         header.createCell(0).setCellValue("UUID");
         header.createCell(1).setCellValue("Komoditas");
-        header.createCell(2).setCellValue("CratedAt");
-        header.createCell(3).setCellValue("UpdatedAt");
+        header.createCell(2).setCellValue("total");
+        header.createCell(3).setCellValue("CratedAt");
+        header.createCell(4).setCellValue("UpdatedAt");
         try{
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/kawahedukasi", "postgres", "1");
             Statement st = connection.createStatement();
